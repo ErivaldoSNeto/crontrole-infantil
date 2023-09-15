@@ -1,0 +1,66 @@
+<!DOCTYPE html> <!-- Define o tipo de documento para HTML5 -->
+<html lang="en"> <!-- Define a linguagem da página como inglês -->
+
+<head> <!-- Começa a seção de cabeçalho do documento -->
+    <!-- Define a codificação de caracteres do documento -->
+    <meta charset="UTF-8">
+
+    <!-- Define a configuração de exibição para dispositivos móveis e define a escala de zoom -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Define o título da página -->
+    <title>Cronômetro</title>
+
+    <!-- Importa o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body> <!-- Começa a seção de corpo do documento -->
+    <!-- Divisão de fundo (possivelmente para estilos visuais) -->
+    <div class="background"></div>
+
+    <!-- Divisão principal que contém o conteúdo do cronômetro -->
+    <div class="container">
+        <!-- Título do cronômetro -->
+        <h1>Cronômetro</h1>
+
+        <!-- Container para inserção do nome -->
+        <div class="input-container">
+            <!-- Campo de texto para inserir o nome -->
+            <input type="text" id="personName" placeholder="Nome">
+            <!-- Botão para apagar o nome inserido -->
+            <button id="apagarNome" class="clear-name-button">X</button>
+        </div>
+
+        <!-- Container dos botões principais -->
+        <div class="button-container">
+            <!-- Botão para iniciar o cronômetro -->
+            <button id="startButton">Iniciar</button>
+            <!-- Botão 'Livre' (para o cronômetro funcionar de forma crescente) -->
+            <button id="stopButton">Livre</button>
+        </div>
+
+        <!-- Container do display do cronômetro e botões adicionais -->
+        <div id="timer-container">
+            <!-- Display onde o tempo do cronômetro provavelmente será mostrado -->
+            <div id="timer"></div>
+            <!-- Linha de botões adicionais -->
+            <div class="button-row">
+                <!-- Botão para adicionar 5 minutos (assumindo baseado no texto) -->
+                <button id="button1" class="square-button">+5</button>
+                <!-- Os próximos três botões têm funcionalidades de controlar o cronômetro -->
+                <button id="button2" class="square-button">L</button>
+                <button id="button3" class="square-button">P</button>
+                <button id="button4" class="square-button">A</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- uma borda inferior  -->
+    <div class="bottom-border"></div>
+
+    <!-- Importa o arquivo JavaScript para funcionalidades -->
+    <script src="script.js"></script>
+</body> <!-- Finaliza a seção de corpo do documento -->
+
+</html> <!-- Finaliza a estrutura HTML -->

@@ -1,0 +1,94 @@
+/* Estilização global para o corpo da página */
+body {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove padding padrão */
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+    background-color: transparent; /* Define a cor de fundo como transparente */
+    overflow: hidden; /* Esconde qualquer conteúdo que saia dos limites da viewport */
+}
+
+/* Estilização para o container principal */
+.container {
+    position: relative; /* Define a posição como relativa */
+    text-align: center; /* Centraliza o texto */
+    color: black; /* Define a cor do texto como preto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao texto */
+    z-index: 1; /* Define a ordem de empilhamento */
+}
+
+/* Estilização para o container do cronômetro */
+#timer-container {
+    display: flex; /* Usa o modelo de layout flexível */
+    flex-direction: column; /* Define a direção principal como coluna */
+    align-items: center; /* Centraliza itens horizontalmente */
+}
+
+/* Estilização para a exibição do cronômetro */
+#timer {
+    font-size: 20px; /* Define o tamanho da fonte */
+    margin: 10px 0; /* Define margens superior e inferior */
+    color: black; /* Define a cor do texto como preto */
+}
+
+/* Estilização para campos de texto */
+input[type="text"] {
+    padding: 5px; /* Adiciona padding ao redor */
+    font-size: 16px; /* Define o tamanho da fonte */
+    color: black; /* Define a cor do texto como preto */
+    border-radius: 8px; /* Arredonda os cantos do input */
+}
+
+/* Estilização para o container dos botões */
+.button-container {
+    display: flex; /* Usa o modelo de layout flexível */
+    justify-content: center; /* Centraliza os itens na linha */
+    margin-top: 20px; /* Define uma margem superior */
+}
+
+/* Estilização comum para botões no container e botões quadrados */
+.button-container button, 
+.square-button {
+    margin-right: 10px; /* Define uma margem à direita */
+    border-radius: 8px; /* Arredonda os cantos do botão */
+}
+
+/* Estilização para a linha de botões adicionais */
+.button-row {
+    display: flex; /* Usa o modelo de layout flexível */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: center; /* Centraliza os itens na linha */
+}
+
+/* Estilização para botões quadrados */
+.square-button {
+    width: 30px; /* Define a largura */
+    height: 30px; /* Define a altura */
+    font-size: 10px; /* Define o tamanho da fonte */
+    display: none; /* Esconde o botão por padrão */
+}
+
+/* Estilização para o fundo */
+.background {
+    position: fixed; /* Fixa a posição */
+    top: 0; /* Posiciona no topo */
+    left: 0; /* Posiciona à esquerda */
+    width: 100%; /* Preenche a largura total */
+    height: 100%; /* Preenche a altura total */
+    background-image: url('tiodu.png'); /* Define a imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir todo o espaço */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-position: center center; /* Centraliza a imagem */
+    opacity: 0.7; /* Define a opacidade */
+    z-index: -1; /* Define a ordem de empilhamento */
+}
+
+/* Estilização para a borda inferior */
+.bottom-border {
+    position: fixed; /* Fixa a posição */
+    bottom: 0; /* Posiciona na parte inferior */
+    left: 0; /* Posiciona à esquerda */
+    width: 100%; /* Preenche a largura total */
+    height: 8px; /* Define a altura */
+    background-color: #333; /* Define a cor de fundo */
+    z-index: 0; /* Define a ordem de empilhamento */
+}
